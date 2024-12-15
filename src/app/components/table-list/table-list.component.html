@@ -1,0 +1,33 @@
+
+<table class="table table-bordered bg-dark text-white text-capitalize text-center">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>category</th>
+            <th>price</th>
+            <th>stock</th>
+            <th>rating</th>
+            <th>brand</th>
+            <th>description</th>
+            <th>color</th>
+            <th>value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr
+        *ngFor="let prod of products; let i=index"
+        >
+            <td>{{prod.id}}</td>
+            <td>{{prod.name}}</td>
+            <td>{{prod.category}}</td>
+            <td>{{prod.price}}</td>
+            <td>{{prod.stock}}</td>
+            <td>{{prod.rating}}</td>
+            <td>{{prod.brand}}</td>
+            <td>{{prod.description}}</td>
+            <td>{{prod.color}}</td>
+            <td>{{prod.value}}</td>
+        </tr>
+    </tbody>
+</table>

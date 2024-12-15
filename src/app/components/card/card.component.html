@@ -1,0 +1,19 @@
+
+<div class="row">
+    <div 
+    *ngFor="let post of postArr; let i=index"
+    class="col-md-4 mb-5">
+        <div class="card  h-100">
+            <div class="card-header">
+                <h1>{{post.title}}</h1>
+            </div>
+            <div class="card-body">
+                <p>{{post.body}}</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+                <button class="btn btn-sm btn-outline-success">Edit</button>
+                <button class="btn btn-sm btn-outline-danger">Remove</button>
+            </div>
+        </div>
+    </div>
+</div>
